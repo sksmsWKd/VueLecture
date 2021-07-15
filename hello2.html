@@ -9,10 +9,14 @@
 </head>
 
 <body>
-        <h1 id='title'>{{ message }} ,{{ name }}</h1>
+        <div id="title">
+                <h1>{{ message.greetings }},{{ message.name }}</h1>
+
+                <!-- 단독객체든 변수든 똑같이 엑세스가 가능 -->
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <script src="./hello.js"></script>
+        <script src="./hello2.js"></script>
 </body>
 
 </html>
