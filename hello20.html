@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+
+<body>
+        <div id="app">
+                <h2>나이</h2>
+                <input v-model='age'>
+                <p>Your age : {{ age }}</p>
+
+                <br><br>
+                <h2>아이디</h2>
+                <input v-model="user_id" placeholder="너의아이디">
+                <p>{{ user_info }}</p>
+
+                <input type="checkbox" id="checkbox_one" value="bronze" v-model="user_grade">
+                <label for="checkbox_one">bronze</label>
+
+                <input type="checkbox" id="checkbox_two" value="silver" v-model="user_grade">
+                <label for="checkbox_two">silver</label>
+
+                <input type="checkbox" id="checkbox_three" value="gold" v-model="user_grade">
+                <label for="checkbox_three">gold</label>
+
+                <br><br>
+
+
+                <h2>adult??</h2>
+                <p>{{ user_age }}</p>
+
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="./hello20.js"></script>
+</body>
+
+</html>
+
+<!--computed properties   , 변수처럼 사용 가능-->
