@@ -9,7 +9,9 @@
 </head>
 
 <body>
-        <h1 id='title'>{{ message }} ,{{ name }}</h1>
+        <div id="title">
+                <span v-bind:title="message"></span>
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <script src="./hello.js"></script>
